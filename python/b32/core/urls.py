@@ -18,8 +18,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from .api import api
+from book.api import book_api
 
-urlpatterns = [
-    path("admin/", admin.site.urls),
-    path("api/", api.urls)
-]
+api.add_router('books', book_api)
+    
