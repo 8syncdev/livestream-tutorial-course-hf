@@ -1,0 +1,1 @@
+MODULE_B = "MODULE_B"
