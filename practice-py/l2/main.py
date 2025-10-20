@@ -37,21 +37,21 @@ from typing import Optional, Literal
 # print(car('stop'))
 
 
-# from typing import Callable
+from typing import Callable
 
 
-# MyFunc = Callable[
-#     [int, int], # a là int, b là int
-#     int
-# ]
+MyFunc = Callable[
+    [int, int], # a là int, b là int
+    int
+]
 
-# def tong(a, b):
-#     return a + b
+def tong(a, b):
+    return a + b
 
-# def call_tong(fn: MyFunc, a, b):
-#     return fn(a, b)
+def call_tong(fn: MyFunc, a, b):
+    return fn(a, b)
 
-# print(call_tong(tong, 1, 1))
+print(call_tong(fn=tong, a=1, b=1))
 
 
 
